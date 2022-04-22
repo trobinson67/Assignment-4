@@ -1,0 +1,389 @@
+{
+  "id": "15f0ab2c-03d1-4ce1-aead-0a4007b8a903",
+  "version": "2.0",
+  "name": "Testing Assignment 4 Case 1",
+  "url": "https://demo.guru99.com",
+  "tests": [{
+    "id": "d711fc59-a7c3-4b11-ad4d-12d4f9dd35f0",
+    "name": "Case 1",
+    "commands": [{
+      "id": "dc25821a-e0f1-49b1-88d9-dcfe4b58179f",
+      "comment": "Testing user login using the correct username with the wrong password",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3291e0df-0b40-4f9f-8069-d4c8eb1f33df",
+      "comment": "",
+      "command": "open",
+      "target": "/test/newtours/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73dc911d-d863-496c-8d7e-e5b4cf4a3f1e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e7ffc4f-8676-4fa1-8f4c-5256dd00560c",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7598415-2fc9-4362-9b59-793253fcb6b5",
+      "comment": "Types the value in as username",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Usertest1"
+    }, {
+      "id": "9315ae72-5696-4942-9a6e-e9ddd94786a4",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6c98b3b-89cb-4351-bbc8-f3f94ec6d90e",
+      "comment": "Types value in for password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Kad99441"
+    }, {
+      "id": "7ce6ba3e-71e4-4bf3-b6a5-db7706802cf0",
+      "comment": "Sends username and password combination to be verified by system",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6504500b-cf3e-42eb-9156-1534a46412bb",
+      "comment": "Verifies the value in a specified area of the webpage",
+      "command": "verifyElementPresent",
+      "target": "css=span:nth-child(3)",
+      "targets": [
+        ["css=span:nth-child(3)", "css:finder"],
+        ["xpath=//td[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Enter your userName and password correct')]", "xpath:innerText"]
+      ],
+      "value": "Enter your userName and password correct"
+    }]
+  }, {
+    "id": "3efeecf1-27a5-4671-838d-16cea03a01ac",
+    "name": "Case 2",
+    "commands": [{
+      "id": "bcb9ba13-4ce0-4d77-bab1-f2038d0ce0e9",
+      "comment": "Testing user login using the correct username with the wrong password",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de31e1f8-0d3d-47fe-8db5-d216009d8ac0",
+      "comment": "",
+      "command": "open",
+      "target": "/test/newtours/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45dd549c-48ba-44b9-ad90-f0ba08b97489",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdaa5958-b0d6-44ee-acbc-998323bcfae6",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7f64ae9-5bf3-4e2c-88b0-3cab47ee52e7",
+      "comment": "Types the value in as username",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Usertest1"
+    }, {
+      "id": "67b4f8b7-3123-4cb8-b7a4-429894fdf784",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28f91808-06ea-4ec8-ae5e-93814c83695b",
+      "comment": "Types value in for password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "StrongPassword123"
+    }, {
+      "id": "bf0f5f6c-78d3-453c-9264-7fd48af8f39f",
+      "comment": "Sends username and password combination to be verified by system",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8d5f3c49-b0c7-445a-b98c-f30a6f1715b4",
+      "comment": "Verifies the value in a specified area of the webpage",
+      "command": "verifyElementPresent",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Successfully')]", "xpath:innerText"]
+      ],
+      "value": "Login Successfully"
+    }]
+  }, {
+    "id": "d92c23a7-3f6b-44c6-869a-5c3599f08f02",
+    "name": "Case 3",
+    "commands": [{
+      "id": "68862afd-dd98-4f90-a926-a3a6cf79f13d",
+      "comment": "Testing user login using the correct username with the wrong password",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff6eced0-bdf5-4064-b2ad-4554373b4ca9",
+      "comment": "",
+      "command": "open",
+      "target": "/test/newtours/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cc17dcd-1df7-4d25-b0b5-4c8f601378aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56332315-19b9-4f5e-a68a-85807756095f",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a1115c6-f23e-4dcc-812c-86e213874c7c",
+      "comment": "Types the value in as username",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "7278091964"
+    }, {
+      "id": "7b975129-338a-44e1-977d-55ff45e166d5",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "840db81c-0644-408c-b4bf-c53f765ef5b0",
+      "comment": "Types value in for password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Kad99441"
+    }, {
+      "id": "1958ef99-4bf4-4ad6-ae50-78a169c5f6e3",
+      "comment": "Sends username and password combination to be verified by system",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "226dfd6b-cfd1-4329-98a5-2b43d9fca320",
+      "comment": "Verifies the value in a specified area of the webpage",
+      "command": "verifyElementPresent",
+      "target": "css=span:nth-child(3)",
+      "targets": [
+        ["css=span:nth-child(3)", "css:finder"],
+        ["xpath=//td[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Enter your userName and password correct')]", "xpath:innerText"]
+      ],
+      "value": "Enter your userName and password correct"
+    }]
+  }, {
+    "id": "85fbb915-61ea-43d1-91c3-6eb41e6be9f8",
+    "name": "Case 4",
+    "commands": [{
+      "id": "601285c3-8556-46d4-9095-e5101dc08592",
+      "comment": "Testing user login using the correct username with the wrong password",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d3ec255-f453-4593-b9e4-ba7614247930",
+      "comment": "",
+      "command": "open",
+      "target": "/test/newtours/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "186eab5d-4d2c-4905-b236-2a88f73a802a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "426c841f-a17c-4abd-a663-bc6d13eea502",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6adb50f5-83f0-4944-9f49-2d81429336fd",
+      "comment": "Types the value in as username",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Usertest1"
+    }, {
+      "id": "d0cf2c5b-2498-4802-8daf-d8862f95efc8",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1edee13f-15cc-419b-bf72-ffbc20aa969d",
+      "comment": "Sends username and password combination to be verified by system",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b6bfcf05-87d3-4548-bd6a-4adf29ae2ab5",
+      "comment": "Verifies the value in a specified area of the webpage",
+      "command": "verifyElementPresent",
+      "target": "css=span:nth-child(3)",
+      "targets": [
+        ["css=span:nth-child(3)", "css:finder"],
+        ["xpath=//td[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Enter your userName and password correct')]", "xpath:innerText"]
+      ],
+      "value": "Enter your userName and password correct"
+    }]
+  }],
+  "suites": [{
+    "id": "332a2f68-862a-4937-887b-2e9bad87e862",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d711fc59-a7c3-4b11-ad4d-12d4f9dd35f0"]
+  }],
+  "urls": ["https://demo.guru99.com/"],
+  "plugins": []
+}
